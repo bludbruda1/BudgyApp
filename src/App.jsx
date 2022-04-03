@@ -1,5 +1,6 @@
 import "./App.css";
 import React from "react";
+import Frequency from "./components/Frequency";
 import Expense from "./components/Expense";
 import SaveButton from "./components/SaveButton";
 import Typography from "@mui/material/Typography";
@@ -47,11 +48,14 @@ function App() {
               <Typography variant="h5" component="div" gutterBottom>
                 Budgy App
               </Typography>
-              <TotalPay
-                id="total-pay"
-                label={"Total Pay: "}
-                name={"totalpay"}
-              />
+              <Stack direction="row">
+                <TotalPay
+                  id="total-pay"
+                  label={"Total Pay: "}
+                  name={"totalpay"}
+                />
+                <Frequency />
+              </Stack>
               <Expense />
               <Stack direction="row" spacing={2}>
                 <SaveButton />
