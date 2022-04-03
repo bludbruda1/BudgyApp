@@ -1,7 +1,7 @@
 {
   "name": "budgy",
   "version": "0.1.0",
-  "homepage": "https://bludbruda1.github.io/budgy",
+  "homepage": "https://bludbruda1.github.io/budgyapp",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.8.2",
