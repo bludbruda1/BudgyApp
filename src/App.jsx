@@ -13,13 +13,17 @@ const totalAdd = (e) => {
   // Trying to loop through the values and get the sum of all inputs
   let totalVal = 0;
   for (var i = 0; i < inputs.length; i++) {
-    totalVal +=
-      (isNaN(parseInt(totalVal)) ? 0 : parseInt(totalVal)) +
-      (isNaN(parseInt(inputs[i].value)) ? 0 : parseInt(inputs[i].value));
+    // totalVal +=
+    //   (isNaN(parseInt(totalVal)) ? 0 : parseInt(totalVal)) +
+    //   (isNaN(parseInt(inputs[i].value)) ? 0 : parseInt(inputs[i].value));
+    totalVal += parseFloat(inputs[i].value);
   }
   // Grabs the value entered in the totalPay component and calculates that value minus the total value of all inputs
   const totalPayInput = document.getElementById("total-pay").value;
+  console.log("totalPay: " + totalPayInput);
   const totalRemaining = totalPayInput - totalVal;
+  console.log("totalCosts: " + totalVal);
+  console.log("totalRemaining: " + totalRemaining);
 
   // Trying to grab total values of all expense amount fields and put in the total amount label
   document.getElementById("total-amount").innerHTML =
