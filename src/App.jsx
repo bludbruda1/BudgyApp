@@ -21,7 +21,8 @@ const totalAdd = (e) => {
   // Grabs the value entered in the totalPay component and calculates that value minus the total value of all inputs
   const totalPayInput = document.getElementById("total-pay").value;
   console.log("totalPay: " + totalPayInput);
-  const totalRemaining = totalPayInput - totalVal;
+  const totalRemaining =
+    Math.round((totalPayInput - totalVal) * 100 + Number.EPSILON) / 100;
   console.log("totalCosts: " + totalVal);
   console.log("totalRemaining: " + totalRemaining);
 
