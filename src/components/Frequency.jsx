@@ -14,7 +14,7 @@ export default function Frequency() {
 
   return (
     <Box sx={{ minWidth: 120 }}>
-      <FormControl sx={{ m: 1, width: "15ch" }}>
+      <FormControl sx={{ m: 1, width: "16ch" }}>
         <InputLabel id="pay-frequency">Frequency</InputLabel>
         <Select
           labelId="frequency"
