@@ -19,13 +19,13 @@ export default function TotalPay() {
       <Box
         component="form"
         sx={{
-          "& > :not(style)": { m: 1, width: 130 },
+          "& > :not(style)": { m: 1, width: 118 },
         }}
       >
         <Grid container direction="column" columns={1} spacing={2}>
           <TextField
             id="total-pay"
-            sx={{ width: 150 }}
+            sx={{ width: 135 }}
             name="totalpay"
             type="number"
             variant="outlined"

@@ -16,7 +16,7 @@ export default function Frequency() {
     <Box
       component="form"
       sx={{
-        "& > :not(style)": { m: 1, width: 130 },
+        "& > :not(style)": { m: 1, width: 142 },
       }}
     >
       <FormControl sx={{ m: 1, width: "16ch" }}>
