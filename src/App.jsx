@@ -48,7 +48,7 @@ function App() {
               <Typography variant="h5" component="div" gutterBottom>
                 Budgy App
               </Typography>
-              <Stack direction="row">
+              <Stack direction="row" spacing={2}>
                 <TotalPay
                   id="total-pay"
                   label={"Total Pay: "}
