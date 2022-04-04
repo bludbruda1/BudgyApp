@@ -1,6 +1,7 @@
-import FormControl from "@mui/material/FormControl";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
 import InputLabel from "@mui/material/InputLabel";
-import OutlinedInput from "@mui/material/OutlinedInput";
+import TextField from "@mui/material/TextField";
 import InputAdornment from "@mui/material/InputAdornment";
 import React from "react";
 
@@ -15,17 +16,30 @@ export default function TotalPay() {
 
   return (
     <div>
-      <FormControl sx={{ m: 1, width: "25ch" }}>
-        <InputLabel htmlFor="outlined-adornment-amount">Total Pay</InputLabel>
-        <OutlinedInput
-          id="total-pay"
-          type="number"
-          value={values.amount}
-          onChange={handleChange("amount")}
-          startAdornment={<InputAdornment position="start">$</InputAdornment>}
-          label="Amount"
-        />
-      </FormControl>
+      <Box
+        component="form"
+        sx={{
+          "& > :not(style)": { m: 1, width: 130 },
+        }}
+      >
+        <Grid container direction="column" columns={1} spacing={2}>
+          <TextField
+            id="total-pay"
+            sx={{ width: 150 }}
+            name="totalpay"
+            type="number"
+            variant="outlined"
+            label="Total Pay"
+            InputProps={{
+              startAdornment: (
+                <InputAdornment position="start">$</InputAdornment>
+              ),
+            }}
+            value={values.amount}
+            onChange={handleChange("amount")}
+          />
+        </Grid>
+      </Box>
     </div>
   );
 }

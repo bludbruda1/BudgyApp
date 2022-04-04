@@ -13,7 +13,12 @@ export default function Frequency() {
   };
 
   return (
-    <Box sx={{ minWidth: 120 }}>
+    <Box
+      component="form"
+      sx={{
+        "& > :not(style)": { m: 1, width: 130 },
+      }}
+    >
       <FormControl sx={{ m: 1, width: "16ch" }}>
         <InputLabel id="pay-frequency">Frequency</InputLabel>
         <Select
