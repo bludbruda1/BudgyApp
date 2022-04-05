@@ -1,13 +1,15 @@
+import {
+  Box,
+  Grid,
+  IconButton,
+  InputAdornment,
+  Stack,
+  TextField,
+} from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
-import Box from "@mui/material/Box";
 import DeleteIcon from "@mui/icons-material/Delete";
-import IconButton from "@mui/material/IconButton";
-import InputAdornment from "@mui/material/InputAdornment";
-import Stack from "@mui/material/Stack";
-import TextField from "@mui/material/TextField";
 import React, { useState } from "react";
 import { createMedia } from "@artsy/fresnel";
-import Grid from "@mui/material/Grid";
 
 const { MediaContextProvider, Media } = createMedia({
   breakpoints: {

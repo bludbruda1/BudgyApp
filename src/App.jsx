@@ -1,11 +1,11 @@
 import "./App.css";
-import React from "react";
-import Frequency from "./components/Frequency";
-import Expense from "./components/Expense";
-import SaveButton from "./components/SaveButton";
-import Typography from "@mui/material/Typography";
-import TotalPay from "./components/TotalPay";
 import { Box, Button, Container, Stack } from "@mui/material";
+import Expense from "./components/Expense";
+import Frequency from "./components/Frequency";
+import React from "react";
+import SaveButton from "./components/SaveButton";
+import TotalPay from "./components/TotalPay";
+import Typography from "@mui/material/Typography";
 
 const totalAdd = (e) => {
   // Grab all inputs that are named 'expense'
