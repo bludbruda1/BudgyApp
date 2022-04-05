@@ -1,11 +1,8 @@
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
-import TextField from "@mui/material/TextField";
-import InputAdornment from "@mui/material/InputAdornment";
-import React from "react";
+import { Box, Grid, InputAdornment, TextField } from "@mui/material";
+import React, { useState } from "react";
 
 export default function TotalPay() {
-  const [values, setValues] = React.useState({
+  const [values, setValues] = useState({
     amount: "",
   });
 
