@@ -1,0 +1,10 @@
+{
+    "browser": "chrome",
+    "video": false,
+    "chromeWebSecurity": false,
+    "fixturesFolder": false,
+    "env": {
+        "budgyUrl": "http://localhost:3000"
+    }
+    
+  }
