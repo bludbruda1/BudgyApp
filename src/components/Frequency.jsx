@@ -1,12 +1,8 @@
-import React from "react";
-import Box from "@mui/material/Box";
-import InputLabel from "@mui/material/InputLabel";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
+import { Box, FormControl, InputLabel, MenuItem, Select } from "@mui/material";
+import React, { useState } from "react";
 
 export default function Frequency() {
-  const [frequency, setFrequency] = React.useState("");
+  const [frequency, setFrequency] = useState("");
 
   const handleChange = (event) => {
     setFrequency(event.target.value);

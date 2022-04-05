@@ -1,6 +1,5 @@
-import Button from "@mui/material/Button";
+import { Box, Button } from "@mui/material";
 import * as React from "react";
-import Box from "@mui/material/Box";
 
 export default function SaveButton() {
   return (
