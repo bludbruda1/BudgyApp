@@ -1,11 +1,11 @@
 import "./App.css";
-import { Box, Button, Container, Stack } from "@mui/material";
+import { Button, Stack } from "@mui/material";
+import ResponsiveAppBar from "./components/AppBar";
 import Expense from "./components/Expense";
 import Frequency from "./components/Frequency";
 import React from "react";
 import SaveButton from "./components/SaveButton";
 import TotalPay from "./components/TotalPay";
-import Typography from "@mui/material/Typography";
 
 const totalAdd = (e) => {
   // Grab all inputs that are named 'expense'
@@ -34,39 +34,23 @@ const totalAdd = (e) => {
 
 function App() {
   return (
-    <Box
-      sx={{
-        "& > :not(style)": { m: 1, width: "25ch" },
-      }}
-      noValidate
-      autoComplete="off"
-    >
-      <div className="App">
-        <Container>
-          <React.Fragment>
-            <Stack spacing={2}>
-              <Typography variant="h5" component="div" gutterBottom>
-                Budgy App
-              </Typography>
-              <Stack direction="row" spacing={2}>
-                <TotalPay
-                  id="total-pay"
-                  label={"Total Pay: "}
-                  name={"totalpay"}
-                />
-                <Frequency />
-              </Stack>
-              <Expense />
-              <Stack direction="row" spacing={2}>
-                <SaveButton />
-                <Button onClick={totalAdd}>Calculate</Button>
-              </Stack>
-              <label id="total-amount">Total pay remaining: $0</label>
-            </Stack>
-          </React.Fragment>
-        </Container>
-      </div>
-    </Box>
+    <div className="App">
+      <React.Fragment>
+        <Stack spacing={2}>
+          <ResponsiveAppBar />
+          <Stack direction="row" spacing={2}>
+            <TotalPay id="total-pay" label={"Total Pay: "} name={"totalpay"} />
+            <Frequency />
+          </Stack>
+          <Expense />
+          <Stack direction="row" spacing={2}>
+            <SaveButton />
+            <Button onClick={totalAdd}>Calculate</Button>
+          </Stack>
+          <label id="total-amount">Total pay remaining: $0</label>
+        </Stack>
+      </React.Fragment>
+    </div>
   );
 }
 
