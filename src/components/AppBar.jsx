@@ -16,7 +16,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { deepPurple } from "@mui/material/colors";
 
 const pages = ["About", "Contact"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const settings = ["Profile"];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -147,7 +147,7 @@ const ResponsiveAppBar = () => {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Button href={setting} textalign="center">
+                  <Button href="/" textalign="center">
                     {setting}
                   </Button>
                 </MenuItem>
