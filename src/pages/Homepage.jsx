@@ -1,6 +1,5 @@
 import "./../App.css";
 import { Button, Stack } from "@mui/material";
-import ResponsiveAppBar from "./../components/AppBar";
 import Expense from "./../components/Expense";
 import Frequency from "./../components/Frequency";
 import React from "react";
@@ -37,7 +36,6 @@ function Homepage() {
     <div className="App">
       <React.Fragment>
         <Stack spacing={2}>
-          <ResponsiveAppBar />
           <Stack direction="row" spacing={2}>
             <TotalPay id="total-pay" label={"Total Pay: "} name={"totalpay"} />
             <Frequency />

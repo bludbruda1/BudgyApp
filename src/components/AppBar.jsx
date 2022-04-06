@@ -40,15 +40,17 @@ const ResponsiveAppBar = () => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box
-            component="img"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-            }}
-            alt="Budgy"
-            src="/BudgyApp/images/BudgyAppLogo.png"
-          />
+          <a href="/">
+            <Box
+              component="img"
+              sx={{
+                mr: 2,
+                display: { xs: "none", md: "flex" },
+              }}
+              alt="Budgy"
+              src="/BudgyApp/images/BudgyAppLogo.png"
+            />
+          </a>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -90,6 +92,7 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
+                href={page}
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
@@ -98,15 +101,17 @@ const ResponsiveAppBar = () => {
               </Button>
             ))}
           </Box>
-          <Box
-            component="img"
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-            }}
-            alt="Budgy"
-            src="/BudgyApp/images/BudgyAppLogo.png"
-          />
+          <a href="/">
+            <Box
+              component="img"
+              sx={{
+                mr: 2,
+                display: { xs: "flex", md: "none" },
+              }}
+              alt="Budgy"
+              src="/BudgyApp/images/BudgyAppLogo.png"
+            />
+          </a>
           <Typography
             variant="h6"
             noWrap
