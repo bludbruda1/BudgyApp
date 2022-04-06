@@ -13,6 +13,7 @@ import {
   Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import { deepPurple } from "@mui/material/colors";
 
 const pages = ["About", "Contact"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -123,7 +124,9 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" />
+                <Avatar alt="Budgy" sx={{ bgcolor: deepPurple[500] }}>
+                  B
+                </Avatar>
               </IconButton>
             </Tooltip>
             <Menu

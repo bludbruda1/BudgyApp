@@ -19,6 +19,7 @@ function App() {
             paddingTop: "25px",
             paddingLeft: "25px",
             paddingBottom: "25px",
+            paddingRight: "25px",
           }}
         >
           <Stack spacing={2}>
