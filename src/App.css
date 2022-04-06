@@ -13,6 +13,13 @@
   }
 }
 
+@media print {
+  header {
+      background-color: #1976d2 !important;
+      -webkit-print-color-adjust: exact; 
+  }
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
