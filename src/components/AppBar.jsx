@@ -14,7 +14,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
-const pages = ["Products", "Pricing", "Blog"];
+const pages = ["About", "Contact"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const ResponsiveAppBar = () => {
@@ -80,7 +80,9 @@ const ResponsiveAppBar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Button href={page} textalign="center">
+                    {page}
+                  </Button>
                 </MenuItem>
               ))}
             </Menu>
@@ -137,7 +139,9 @@ const ResponsiveAppBar = () => {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                  <Button href={setting} textalign="center">
+                    {setting}
+                  </Button>
                 </MenuItem>
               ))}
             </Menu>

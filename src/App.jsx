@@ -47,7 +47,9 @@ function App() {
             <SaveButton />
             <Button onClick={totalAdd}>Calculate</Button>
           </Stack>
-          <label id="total-amount">Total pay remaining: $0</label>
+          <label style={{ paddingLeft: "20px" }} id="total-amount">
+            Total pay remaining: $0
+          </label>
         </Stack>
       </React.Fragment>
     </div>
