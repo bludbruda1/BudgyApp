@@ -1,7 +1,6 @@
 import "./../App.css";
-// import logo from "./../../public/Budgy.gif";
 import React from "react";
-import { Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 
 function About() {
   return (
@@ -32,7 +31,22 @@ function About() {
           then save the budget as a pdf. Refer to the below video on the proper
           way to use this app.
         </Typography>
-        {/* <img src={logo} alt="loading..." /> */}
+        <Box
+          component="img"
+          sx={{
+            width: 500,
+            mr: 2,
+            display: { xs: "none", md: "flex", lg: "flex" },
+          }}
+          alt="Budgy"
+          src="/BudgyApp/images/Budgy.gif"
+        />
+        <Box
+          component="img"
+          sx={{ mr: 2, display: { xs: "flex", md: "none" } }}
+          alt="Budgy"
+          src="/BudgyApp/images/Budgy.gif"
+        />
       </Stack>
     </div>
   );
