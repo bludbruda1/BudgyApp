@@ -13,9 +13,10 @@ import {
   Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import { deepPurple } from "@mui/material/colors";
 
 const pages = ["About", "Contact"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const settings = ["Profile"];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -40,15 +41,17 @@ const ResponsiveAppBar = () => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box
-            component="img"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-            }}
-            alt="Budgy"
-            src="/BudgyApp/images/BudgyAppLogo.png"
-          />
+          <a href="/">
+            <Box
+              component="img"
+              sx={{
+                mr: 2,
+                display: { xs: "none", md: "flex" },
+              }}
+              alt="Budgy"
+              src="/BudgyApp/images/BudgyAppLogo.png"
+            />
+          </a>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -90,6 +93,7 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
+                href={page}
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
@@ -98,15 +102,17 @@ const ResponsiveAppBar = () => {
               </Button>
             ))}
           </Box>
-          <Box
-            component="img"
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-            }}
-            alt="Budgy"
-            src="/BudgyApp/images/BudgyAppLogo.png"
-          />
+          <a href="/">
+            <Box
+              component="img"
+              sx={{
+                mr: 2,
+                display: { xs: "flex", md: "none" },
+              }}
+              alt="Budgy"
+              src="/BudgyApp/images/BudgyAppLogo.png"
+            />
+          </a>
           <Typography
             variant="h6"
             noWrap
@@ -118,7 +124,9 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" />
+                <Avatar alt="Budgy" sx={{ bgcolor: deepPurple[500] }}>
+                  B
+                </Avatar>
               </IconButton>
             </Tooltip>
             <Menu
@@ -139,7 +147,7 @@ const ResponsiveAppBar = () => {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Button href={setting} textalign="center">
+                  <Button href="/" textalign="center">
                     {setting}
                   </Button>
                 </MenuItem>
