@@ -24,18 +24,9 @@ function App() {
         >
           <Stack spacing={2}>
             <Routes>
-              <Route
-                path={process.env.PUBLIC_URL + "/"}
-                element={<Homepage />}
-              ></Route>
-              <Route
-                path={process.env.PUBLIC_URL + "/about"}
-                element={<About />}
-              ></Route>
-              <Route
-                path={process.env.PUBLIC_URL + "/contact"}
-                element={<Contact />}
-              ></Route>
+              <Route path={"/BudgyApp/"} element={<Homepage />}></Route>
+              <Route path={"/BudgyApp/about"} element={<About />}></Route>
+              <Route path={"/BudgyApp/contact"} element={<Contact />}></Route>
             </Routes>
           </Stack>
         </div>

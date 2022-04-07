@@ -1,7 +1,7 @@
 {
   "name": "budgy",
   "version": "0.1.0",
-  "homepage": "https://bludbruda1.github.io/budgyapp",
+  "homepage": "/",
   "private": true,
   "dependencies": {
     "@artsy/fresnel": "^3.4.0",

@@ -102,7 +102,7 @@ const ResponsiveAppBar = () => {
               </Button>
             ))}
           </Box>
-          <a href="/">
+          <a href="/BudgyApp/">
             <Box
               component="img"
               sx={{
@@ -147,7 +147,7 @@ const ResponsiveAppBar = () => {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Button href="/" textalign="center">
+                  <Button href="/BudgyApp/" textalign="center">
                     {setting}
                   </Button>
                 </MenuItem>
