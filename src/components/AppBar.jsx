@@ -41,7 +41,7 @@ const ResponsiveAppBar = () => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <a href="/BudgyApp/">
+          <a href="/">
             <Box
               component="img"
               sx={{
@@ -83,7 +83,7 @@ const ResponsiveAppBar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Button href={"/BudgyApp/" + page} textalign="center">
+                  <Button href={"/" + page} textalign="center">
                     {page}
                   </Button>
                 </MenuItem>
@@ -93,7 +93,7 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
-                href={page}
+                href={"/" + page}
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
@@ -102,7 +102,7 @@ const ResponsiveAppBar = () => {
               </Button>
             ))}
           </Box>
-          <a href="/BudgyApp/">
+          <a href="/">
             <Box
               component="img"
               sx={{
@@ -147,7 +147,7 @@ const ResponsiveAppBar = () => {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Button href="/BudgyApp/" textalign="center">
+                  <Button href="/" textalign="center">
                     {setting}
                   </Button>
                 </MenuItem>
