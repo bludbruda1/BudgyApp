@@ -102,7 +102,7 @@ const ResponsiveAppBar = () => {
               </Button>
             ))}
           </Box>
-          <a href="/">
+          <a href="/BudgyApp">
             <Box
               component="img"
               sx={{
