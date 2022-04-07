@@ -43,7 +43,7 @@ function About() {
         />
         <Box
           component="img"
-          sx={{ mr: 2, display: { xs: "flex", md: "none" } }}
+          sx={{ width: 150, mr: 2, display: { xs: "flex", md: "none" } }}
           alt="Budgy"
           src="/BudgyApp/images/Budgy.gif"
         />
