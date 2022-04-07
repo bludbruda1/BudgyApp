@@ -24,9 +24,18 @@ function App() {
         >
           <Stack spacing={2}>
             <Routes>
-              <Route path="/" element={<Homepage />}></Route>
-              <Route path="/about" element={<About />}></Route>
-              <Route path="/contact" element={<Contact />}></Route>
+              <Route
+                path={process.env.PUBLIC_URL + "/"}
+                element={<Homepage />}
+              ></Route>
+              <Route
+                path={process.env.PUBLIC_URL + "/about"}
+                element={<About />}
+              ></Route>
+              <Route
+                path={process.env.PUBLIC_URL + "/contact"}
+                element={<Contact />}
+              ></Route>
             </Routes>
           </Stack>
         </div>
