@@ -41,7 +41,7 @@ const ResponsiveAppBar = () => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <a href="/">
+          <a href="/BudgyApp/">
             <Box
               component="img"
               sx={{
@@ -83,7 +83,7 @@ const ResponsiveAppBar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Button href={page} textalign="center">
+                  <Button href={"/BudgyApp/" + page} textalign="center">
                     {page}
                   </Button>
                 </MenuItem>
