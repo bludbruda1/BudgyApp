@@ -11,7 +11,7 @@ function About() {
         </Typography>
         <Typography variant="body1" gutterBottom>
           Budgy is a user-friendly budgeting app that aims to help fellow kiwis
-          budget and get their shit together! 😂😂😂😂😂
+          budget and get their shit together! 😂
         </Typography>
         <Typography variant="h5" gutterBottom>
           Our story
