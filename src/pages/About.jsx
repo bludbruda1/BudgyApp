@@ -11,7 +11,7 @@ function About() {
         </Typography>
         <Typography variant="body1" gutterBottom>
           Budgy is a user-friendly budgeting app that aims to help fellow kiwis
-          budget and get their shit together! 😂😂😂😂😂
+          budget and get their shit together! 😂
         </Typography>
         <Typography variant="h5" gutterBottom>
           Our story
@@ -27,7 +27,7 @@ function About() {
         <Typography variant="h5">How to use it</Typography>
         <Typography variant="subtitle2" gutterBottom>
           The goal is to enter your total pay, frequency, expenses, and then hit
-          calculate to see how much $$ you are left with. From there you can
+          calculate to see how much money you are left with. From there you can
           then save the budget as a pdf. Refer to the below video on the proper
           way to use this app.
         </Typography>
