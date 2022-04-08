@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "https://bludbruda1.github.io/BudgyApp/static/css/main.35f90ac4.css",
+    "main.js": "https://bludbruda1.github.io/BudgyApp/static/js/main.673ed98d.js",
+    "static/js/787.0911c468.chunk.js": "https://bludbruda1.github.io/BudgyApp/static/js/787.0911c468.chunk.js",
+    "index.html": "https://bludbruda1.github.io/BudgyApp/index.html",
+    "main.35f90ac4.css.map": "https://bludbruda1.github.io/BudgyApp/static/css/main.35f90ac4.css.map",
+    "main.673ed98d.js.map": "https://bludbruda1.github.io/BudgyApp/static/js/main.673ed98d.js.map",
+    "787.0911c468.chunk.js.map": "https://bludbruda1.github.io/BudgyApp/static/js/787.0911c468.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35f90ac4.css",
+    "static/js/main.673ed98d.js"
+  ]
+}
