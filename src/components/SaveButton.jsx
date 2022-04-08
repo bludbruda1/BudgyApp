@@ -1,5 +1,5 @@
 import { Box, Button } from "@mui/material";
-import * as React from "react";
+import React from "react";
 
 export default function SaveButton() {
   return (
@@ -16,6 +16,7 @@ export default function SaveButton() {
         id="submit-entry"
         variant="contained"
         color="primary"
+        disableElevation
       >
         Save Budget
       </Button>

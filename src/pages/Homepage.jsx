@@ -20,11 +20,8 @@ const totalAdd = (e) => {
   }
   // Grabs the value entered in the totalPay component and calculates that value minus the total value of all inputs
   const totalPayInput = document.getElementById("total-pay").value;
-  console.log("totalPay: " + totalPayInput);
   const totalRemaining =
     Math.round((totalPayInput - totalVal) * 100 + Number.EPSILON) / 100;
-  console.log("totalCosts: " + totalVal);
-  console.log("totalRemaining: " + totalRemaining);
 
   // Trying to grab total values of all expense amount fields and put in the total amount label
   document.getElementById("total-amount").innerHTML =
@@ -43,9 +40,14 @@ function Homepage() {
           <Expense />
           <Stack direction="row" spacing={2}>
             <SaveButton />
-            <Button onClick={totalAdd}>Calculate</Button>
+            <Button onClick={totalAdd} disableElevation>
+              Calculate
+            </Button>
           </Stack>
-          <label style={{ paddingLeft: "20px" }} id="total-amount">
+          <label
+            style={{ paddingLeft: "20px", fontWeight: "bold" }}
+            id="total-amount"
+          >
             Total pay remaining: $0
           </label>
         </Stack>
