@@ -18,7 +18,7 @@ import { deepPurple } from "@mui/material/colors";
 const pages = ["Home", "About", "Contact"];
 const settings = ["Profile"];
 
-const ResponsiveAppBar = () => {
+const TopBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -159,4 +159,4 @@ const ResponsiveAppBar = () => {
     </AppBar>
   );
 };
-export default ResponsiveAppBar;
+export default TopBar;

@@ -4,20 +4,21 @@ import Homepage from "./pages/Homepage";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Stack from "@mui/material/Stack";
-import ResponsiveAppBar from "./components/AppBar";
+import BottomBar from "./components/BottomBar";
+import TopBar from "./components/TopBar";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <ResponsiveAppBar />
+      <TopBar />
 
       <div
         className="content"
         style={{
           paddingTop: "25px",
           paddingLeft: "25px",
-          paddingBottom: "25px",
+          paddingBottom: "100px",
           paddingRight: "25px",
         }}
       >
@@ -30,6 +31,7 @@ function App() {
           </Routes>
         </Stack>
       </div>
+      <BottomBar />
     </div>
   );
 }
