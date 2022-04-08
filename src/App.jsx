@@ -24,6 +24,7 @@ function App() {
         <Stack spacing={2}>
           <Routes>
             <Route exact path="/" element={<Homepage />}></Route>
+            <Route exact path="/home" element={<Homepage />}></Route>
             <Route exact path="/about" element={<About />}></Route>
             <Route exact path="/contact" element={<Contact />}></Route>
           </Routes>

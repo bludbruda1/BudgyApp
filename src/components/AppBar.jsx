@@ -15,7 +15,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import { deepPurple } from "@mui/material/colors";
 
-const pages = ["About", "Contact"];
+const pages = ["Home", "About", "Contact"];
 const settings = ["Profile"];
 
 const ResponsiveAppBar = () => {

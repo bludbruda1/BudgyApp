@@ -16,6 +16,7 @@ export default function SaveButton() {
         id="submit-entry"
         variant="contained"
         color="primary"
+        disableElevation
       >
         Save Budget
       </Button>
