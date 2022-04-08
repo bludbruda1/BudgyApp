@@ -32,7 +32,7 @@ const BottomBar = () => {
           <BottomNavigationAction
             label="Email"
             icon={<EmailIcon />}
-            onClick={() => window.open("mailto:budgysupport@gmail.com")}
+            onClick={() => window.open("mailto:budgyhelp@gmail.com")}
           />
         </BottomNavigation>
       </Paper>

@@ -26,7 +26,7 @@ function Contact() {
           <Button
             id="email-button"
             variant="contained"
-            onClick={() => window.open("mailto:budgysupport@gmail.com")}
+            onClick={() => window.open("mailto:budgyhelp@gmail.com")}
           >
             Email us
           </Button>
