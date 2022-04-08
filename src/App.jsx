@@ -5,13 +5,13 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Stack from "@mui/material/Stack";
 import BottomBar from "./components/BottomBar";
-import ResponsiveAppBar from "./components/AppBar";
+import TopBar from "./components/TopBar";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <ResponsiveAppBar />
+      <TopBar />
 
       <div
         className="content"
