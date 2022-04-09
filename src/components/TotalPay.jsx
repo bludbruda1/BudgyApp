@@ -25,7 +25,6 @@ export default function TotalPay() {
             name="totalpay"
             type="number"
             variant="outlined"
-            label="Total Pay"
             placeholder="e.g Total income"
             InputProps={{
               startAdornment: (
