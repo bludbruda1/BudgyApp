@@ -31,15 +31,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "serve": "serve -s build",
-    "open": "yarn run cypress open",
-    "prod": "echo \"Add your build command here\"",
-        "postinstall": "node ./node_modules/husky/lib/installer/bin install",
-        "deploy": "git push origin `git subtree split --prefix build main`:gh-pages --force"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run prod"
-    }
+    "open": "yarn run cypress open"
 },
   "eslintConfig": {
     "extends": [
@@ -58,8 +50,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "husky": "^7.0.4"
   }
 }
