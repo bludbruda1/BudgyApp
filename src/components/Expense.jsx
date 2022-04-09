@@ -65,6 +65,7 @@ export default function Expense() {
                   <Grid item>
                     <Stack spacing={2} direction="column">
                       <TextField
+                        placeholder="e.g Groceries"
                         variant="outlined"
                         label="Expense"
                         sx={{ width: 200 }}
@@ -115,7 +116,11 @@ export default function Expense() {
               <Media greaterThanOrEqual="lg">
                 <Grid container direction="column" columns={1} spacing={2}>
                   <Stack spacing={2} direction="row">
-                    <TextField variant="outlined" label="Expense" />
+                    <TextField
+                      variant="outlined"
+                      label="Expense"
+                      placeholder="e.g Groceries"
+                    />
                     <TextField
                       name="expense"
                       type="number"
