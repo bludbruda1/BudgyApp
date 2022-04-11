@@ -1,6 +1,7 @@
 import "./App.css";
 import React from "react";
 import Homepage from "./pages/Homepage";
+import Login from "./pages/Login";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Stack from "@mui/material/Stack";
@@ -26,6 +27,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Homepage />}></Route>
             <Route exact path="/home" element={<Homepage />}></Route>
+            <Route exact path="/login" element={<Login />}></Route>
             <Route exact path="/about" element={<About />}></Route>
             <Route exact path="/contact" element={<Contact />}></Route>
           </Routes>

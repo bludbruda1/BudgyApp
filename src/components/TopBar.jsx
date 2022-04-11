@@ -13,10 +13,9 @@ import {
   Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { deepPurple } from "@mui/material/colors";
 
 const pages = ["Home", "About", "Contact"];
-const settings = ["Profile"];
+const settings = ["Login"];
 
 const TopBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -124,9 +123,7 @@ const TopBar = () => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Budgy" sx={{ bgcolor: deepPurple[500] }}>
-                  B
-                </Avatar>
+                <Avatar alt="Budgy" />
               </IconButton>
             </Tooltip>
             <Menu
@@ -147,7 +144,7 @@ const TopBar = () => {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Button href="/BudgyApp" textalign="center">
+                  <Button href={"BudgyApp/#/" + setting} textalign="center">
                     {setting}
                   </Button>
                 </MenuItem>

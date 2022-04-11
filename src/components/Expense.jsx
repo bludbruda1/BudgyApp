@@ -65,10 +65,12 @@ export default function Expense() {
                   <Grid item>
                     <Stack spacing={2} direction="column">
                       <TextField
+                        name="expense-type"
                         placeholder="e.g Groceries"
                         variant="outlined"
                         label="Expense"
                         sx={{ width: 200 }}
+                        onChange={(e) => handleValuesChange(e, index)}
                       />
                     </Stack>
                   </Grid>
